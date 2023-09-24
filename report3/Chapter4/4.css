@@ -1,0 +1,21 @@
+
+body{background-color: aliceblue;}
+   h1{text-align: center;
+   color: brown;}
+p,form{font-family: "휴먼편지체";}
+a,.nam{font-family:"맑은고딕";
+color: darkblue;
+font-size: 15;
+font-weight: 600;
+}
+.textarea{position: absolute;
+   left: 50%;
+   transform: translateX(-105%);
+}
+.form{background-color: pink;
+height: 500px;}
+footer {
+       background-color: orange; 
+       border-radius: 10px;
+       padding: 5px;
+   font-family: "휴먼편지체";}
