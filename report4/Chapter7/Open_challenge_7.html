@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열로 리스트 만들기</title>
+</head>
+<body>
+    <h3>라면을 만드는데 필요한 재료</h3>
+    <hr>
+
+	<ul id="itemList"></ul>
+
+    <script>
+        let itemArray = ["라면","계란","물","파"];
+		
+		let list = document.getElementById('itemList');
+		
+		for(let i=0; i<itemArray.length; i++) {
+			let li = document.createElement('li');
+			li.textContent = itemArray[i];
+			list.appendChild(li);
+		}
+        
+    </script>
+
+</body>
+</html>

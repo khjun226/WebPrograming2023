@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>큰 자리수와 낮은자리수 같은지 비교</title>
+</head>
+<body>
+<script>
+
+var userInput = prompt("숫자를 입력하세요:");
+
+if (userInput === null || userInput === "") {
+    document.write("입력이 취소되었거나 입력이 없습니다.");
+} else {
+   
+    var number = parseInt(userInput);
+
+    if (!isNaN(number)) {
+        
+        var tempNumber = number;
+
+        
+        var firstDigit = 0;
+        while (tempNumber >= 10) {
+            tempNumber = Math.floor(tempNumber / 10);
+        }
+        firstDigit = tempNumber;
+
+       
+        var lastDigit = number % 10;
+
+        
+        if (firstDigit === lastDigit) {
+            document.write("<h3>큰 자리수와 작은 자리수가 같은지 비교</h3>");
+            document.write("<hr>")
+            document.write(userInput +": 같음");
+        } else {
+            document.write("<h3>큰 자리수와 작은 자리수가 같은지 비교</h3>");
+            document.write("<hr>")
+            document.write(userInput +": 다름");
+        }
+    } else {
+        document.write("올바른 숫자를 입력하세요.");
+    }
+}
+
+</script>
+</body>
+</html>

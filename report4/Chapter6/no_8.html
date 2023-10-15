@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        var Calculator = prompt("수식 입력");
+
+        if (Calculator !== null) {
+            try {
+                var result = eval(Calculator);
+
+                document.write("<h3>eval()로 수식계산</h3>");
+                document.write("<hr>");
+                document.write(Calculator + " = " + result);
+            } catch (error) {
+                document.write("오류 발생: " + error.message);
+            }
+        } else {
+            document.write("사용자가 취소하였습니다.");
+        }
+    </script>
+</body>
+</html>
