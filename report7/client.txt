@@ -1,0 +1,4 @@
+홍길동\t29\t남\thong@example.com
+김철수\t35\t남\tkim@example.com
+박영희\t30\t여\tpark@example.com
+이영자\t28\t여\tlee@example.com
